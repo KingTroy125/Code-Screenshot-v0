@@ -1,9 +1,9 @@
 # Code Screenshot
 A powerful tool for sharing code snippets with additional features. Share beautiful screenshots of your code on your social media platforms.
 
-Project Live at: 
+Project Live at: https://code-screenshot-v0.vercel.app/
 
-![Uploading postspark_export_2025-03-10_20-32-27.png…]()
+![postspark_export_2025-03-10_20-32-27](https://github.com/user-attachments/assets/c83387dd-be29-49e0-a2a5-b86d8780c67a)
 
 ---
 
@@ -36,7 +36,7 @@ Project Live at:
 1. Clone this repo
 
 ```bash
-git clone  && cd code-screenshot
+git clone https://github.com/KingTroy125/Code-Screenshot-v0 && cd code-screenshot
 ```
 
 2. Install project dependencies
