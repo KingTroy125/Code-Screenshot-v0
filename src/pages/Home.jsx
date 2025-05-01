@@ -404,7 +404,7 @@ export default function Home() {
       <footer className="relative z-10 border-t border-white/10">
         <div className="container mx-auto px-4 py-8">
           <div className="flex justify-between items-center">
-            <div className="text-gray-400">© 2023 CodeShot. All rights reserved.</div>
+            <div className="text-gray-400">© 2024 CodeShot. All rights reserved.</div>
             <div className="flex gap-4">
               <a href="https://github.com/KingTroy125/Code-Screenshot-v0" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                 <GitHubLogoIcon className="h-5 w-5" />

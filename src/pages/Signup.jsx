@@ -21,23 +21,23 @@ export default function Signup() {
 
   return (
     <main
-      className="w-full min-h-screen flex flex-col items-center justify-center sm:px-4 relative bg-gradient-to-br from-neutral-900 via-purple-950/20 to-blue-950/20"
+      className="w-full min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 relative bg-gradient-to-br from-neutral-900 via-purple-950/20 to-blue-950/20"
     >
       <div className="absolute top-0 z-[0] h-full w-full bg-purple-950/10 bg-[radial-gradient(ellipse_20%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
       <RetroGrid />
 
-      <div className="max-w-sm w-full text-gray-600 space-y-8 relative z-10">
-        <div className="text-left">
+      <div className="w-full max-w-sm text-gray-600 space-y-6 sm:space-y-8 relative z-10 py-6 sm:py-8">
+        <div className="text-center sm:text-left">
           <Link to="/" className="inline-block">
             <div className="text-xl font-bold">
               Code<span className="text-purple-400">Shot</span>
             </div>
           </Link>
-          <div className="mt-6 space-y-2 mr-auto">
-            <h3 className="text-gray-200 text-2xl font-normal sm:text-3xl tracking-tighter">
+          <div className="mt-5 sm:mt-6 space-y-2 mx-auto sm:mr-auto sm:mx-0">
+            <h3 className="text-gray-200 text-xl font-normal sm:text-2xl md:text-3xl tracking-tighter">
               Create your account
             </h3>
-            <p className="text-gray-400">
+            <p className="text-gray-400 text-sm sm:text-base">
               Already have an account?{" "}
               <Link
                 to="/login"
@@ -48,39 +48,39 @@ export default function Signup() {
             </p>
           </div>
         </div>
-        <form onSubmit={handleSubmit}>
-          <div className="space-y-4">
+        <form onSubmit={handleSubmit} className="w-full mt-4 sm:mt-6">
+          <div className="space-y-3 sm:space-y-4">
             <div>
-              <label className="font-medium text-gray-300">Full Name</label>
+              <label className="font-medium text-gray-300 text-sm sm:text-base">Full Name</label>
               <Input
                 type="text"
                 required
                 placeholder="Your Name"
-                className="w-full mt-2 px-3 py-4 text-gray-300 bg-transparent outline-none focus:border-purple-600/50 shadow-sm rounded-lg border-white/20 border-[1px]"
+                className="w-full mt-1 sm:mt-2 px-3 py-3 sm:py-4 text-gray-300 bg-transparent outline-none focus:border-purple-600/50 shadow-sm rounded-lg border-white/20 border-[1px]"
               />
             </div>
             <div>
-              <label className="font-medium text-gray-300">Email</label>
+              <label className="font-medium text-gray-300 text-sm sm:text-base">Email</label>
               <Input
                 type="email"
                 required
                 placeholder="your@email.com"
-                className="w-full mt-2 px-3 py-4 text-gray-300 bg-transparent outline-none focus:border-purple-600/50 shadow-sm rounded-lg border-white/20 border-[1px]"
+                className="w-full mt-1 sm:mt-2 px-3 py-3 sm:py-4 text-gray-300 bg-transparent outline-none focus:border-purple-600/50 shadow-sm rounded-lg border-white/20 border-[1px]"
               />
             </div>
             <div>
-              <label className="font-medium text-gray-300">Password</label>
+              <label className="font-medium text-gray-300 text-sm sm:text-base">Password</label>
               <Input
                 type="password"
                 required
                 placeholder="••••••••"
-                className="w-full mt-2 px-3 py-4 text-gray-300 bg-transparent outline-none focus:border-purple-600/50 shadow-sm rounded-lg border-white/20 border-[1px]"
+                className="w-full mt-1 sm:mt-2 px-3 py-3 sm:py-4 text-gray-300 bg-transparent outline-none focus:border-purple-600/50 shadow-sm rounded-lg border-white/20 border-[1px]"
               />
             </div>
           </div>
           <button
             type="submit"
-            className="w-full mt-6 group px-4 py-4 font-medium tracking-tighter text-xl text-white bg-purple-200/10 transform-gpu border-[1px] border-white/10 shadow-[0_-20px_80px_-20px_#8686f01f_inset] hover:bg-transparent/10 active:bg-purple-600 rounded-lg duration-150"
+            className="w-full mt-5 sm:mt-6 group px-3 sm:px-4 py-3 sm:py-4 font-medium tracking-tighter text-lg sm:text-xl text-white bg-purple-200/10 transform-gpu border-[1px] border-white/10 shadow-[0_-20px_80px_-20px_#8686f01f_inset] hover:bg-transparent/10 active:bg-purple-600 rounded-lg duration-150"
           >
             Create Account
             <ArrowRightIcon className="inline-flex justify-center items-center w-4 h-4 ml-2 group-hover:translate-x-1 duration-300" />
@@ -89,19 +89,19 @@ export default function Signup() {
             <span className="italic">Demo mode: Click create account to continue</span>
           </div>
         </form>
-        <div className="relative">
+        <div className="relative mt-5">
           <span className="block w-full h-px bg-white/10"></span>
-          <p className="inline-block w-fit text-sm text-gray-200 bg-neutral-900 px-2 absolute -top-2 inset-x-0 mx-auto">
+          <p className="inline-block w-fit text-xs sm:text-sm text-gray-200 bg-neutral-900 px-2 absolute -top-2 inset-x-0 mx-auto">
             Or continue with
           </p>
         </div>
-        <div className="space-y-4 text-sm text-gray-200/50 font-medium">
+        <div className="space-y-3 sm:space-y-4 text-xs sm:text-sm text-gray-200/50 font-medium">
           <button 
             onClick={handleSocialSignup}
-            className="group w-full space-x-1 py-3 flex transform-gpu border-[1px] border-white/10 shadow-[0_-20px_80px_-20px_#8686f01f_inset] items-center justify-center rounded-lg hover:bg-transparent/20 duration-150 active:bg-transparent/50"
+            className="group w-full space-x-1 py-2.5 sm:py-3 flex transform-gpu border-[1px] border-white/10 shadow-[0_-20px_80px_-20px_#8686f01f_inset] items-center justify-center rounded-lg hover:bg-transparent/20 duration-150 active:bg-transparent/50"
           >
             <svg
-              className="w-5 h-5 mr-2"
+              className="w-4 h-4 sm:w-5 sm:h-5 mr-2"
               viewBox="0 0 48 48"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -134,20 +134,20 @@ export default function Signup() {
           </button>
           <button 
             onClick={handleSocialSignup}
-            className="group w-full space-x-1 py-3 flex transform-gpu border-[1px] border-white/10 shadow-[0_-20px_80px_-20px_#8686f01f_inset] items-center justify-center rounded-lg hover:bg-transparent/20 duration-150 active:bg-transparent/50"
+            className="group w-full space-x-1 py-2.5 sm:py-3 flex transform-gpu border-[1px] border-white/10 shadow-[0_-20px_80px_-20px_#8686f01f_inset] items-center justify-center rounded-lg hover:bg-transparent/20 duration-150 active:bg-transparent/50"
           >
-            <TwitterLogoIcon className="w-5 h-5 mr-2 text-[#1DA1F2]" />
+            <TwitterLogoIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-[#1DA1F2]" />
             Continue with Twitter
           </button>
           <button 
             onClick={handleSocialSignup}
-            className="group w-full space-x-1 py-3 flex transform-gpu border-[1px] border-white/10 shadow-[0_-20px_80px_-20px_#8686f01f_inset] items-center justify-center rounded-lg hover:bg-transparent/20 duration-150 active:bg-transparent/50"
+            className="group w-full space-x-1 py-2.5 sm:py-3 flex transform-gpu border-[1px] border-white/10 shadow-[0_-20px_80px_-20px_#8686f01f_inset] items-center justify-center rounded-lg hover:bg-transparent/20 duration-150 active:bg-transparent/50"
           >
-            <GitHubLogoIcon className="w-5 h-5 mr-2" />
+            <GitHubLogoIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
             Continue with GitHub
           </button>
         </div>
-        <div className="text-center text-xs text-gray-400">
+        <div className="text-center text-[10px] sm:text-xs text-gray-400 mt-4">
           By signing up, you agree to our
           <Link to="/terms" className="text-purple-400 hover:text-purple-300 mx-1">
             Terms of Service
